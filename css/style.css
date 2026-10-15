@@ -1,0 +1,26 @@
+.site-header{
+    background-color: lightblue;
+    justify-content: space-between;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+div{
+    padding: 10px;
+}
+nav a{
+    text-decoration: none;
+    margin: 0px 10px;
+}
+
+.hero-grid{
+    background-color: lightpink;
+}
+
+.cards-gallery{
+    background-color: lightgoldenrodyellow;
+}
+
+.site-footer{
+    background-color: lightgray;
+}
