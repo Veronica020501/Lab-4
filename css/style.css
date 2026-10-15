@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 .site-header{
     background-color: lightblue;
     justify-content: space-between;
@@ -5,6 +9,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
+    border: 1px solid black;
 }
 
 .site-header img{
@@ -30,21 +35,25 @@ nav a{
     background-color: lightpink;
     display: grid;
     grid-template-columns: 1fr;
+    border: 1px solid black;
 }
 
 .cards-gallery{
     background-color: lightgoldenrodyellow;
     display: grid;
     grid-template-columns: 1fr;
+    border: 1px solid black;
 }
 article{
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 article button{
     display: flex;
     flex-direction: column;
-    width: 100px;
+    width: 200px;
     height: 20px;
     justify-content: flex-end;
     margin-top: auto;
@@ -53,11 +62,11 @@ article button{
 .card-info{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 }
 
-img{
-    width: 200px;
+article img{
+    width: 100%;
     height: 200px;
     padding: 10px;
 }
@@ -67,6 +76,7 @@ img{
     display: flex;
     justify-content: space-between;
     padding: 0px 10px;
+    border: 1px solid black;
 }
 
 @media (min-width: 768px) {
@@ -94,7 +104,8 @@ img{
     article{
         display: flex;
         flex-direction: column;
-        align-items: center;;
+        align-items: center;
+        padding: 30px;
     }
     .card-info{
         display: flex;
