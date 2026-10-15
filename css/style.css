@@ -5,7 +5,11 @@
     text-align: center;
     display: flex;
     flex-direction: column;
+}
 
+.site-header img{
+    width: 80px;
+    height: 80px;
 }
 
 div{
@@ -16,6 +20,12 @@ nav a{
     margin: 0px 10px;
 }
 
+.container section button{
+    width: 200px;
+    height: 20px;
+    margin-top: auto;
+}
+
 .hero-grid{
     background-color: lightpink;
     display: grid;
@@ -24,9 +34,11 @@ nav a{
 
 .cards-gallery{
     background-color: lightgoldenrodyellow;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 article{
-    display:flex;
+    display: flex;
 }
 
 article button{
@@ -35,6 +47,7 @@ article button{
     width: 100px;
     height: 20px;
     justify-content: flex-end;
+    margin-top: auto;
 }
 
 .card-info{
@@ -54,4 +67,45 @@ img{
     display: flex;
     justify-content: space-between;
     padding: 0px 10px;
+}
+
+@media (min-width: 768px) {
+    .site-header{
+        display: flex;
+        flex-direction: row; 
+        border: 1px solid black;
+    }
+    nav{
+        padding-top: 50px;
+    }
+    .hero-grid{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        border: 1px solid black;
+    }
+    .hero-grid div:nth-child(1){
+        background-color: lightgreen;
+    }
+    .cards-gallery{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        border: 1px solid black;
+    }
+    article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;;
+    }
+    .card-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cards-gallery article button{
+        margin-top: auto;
+    }
+    .site-footer{
+        border: 1px solid black;
+    }
+
 }
